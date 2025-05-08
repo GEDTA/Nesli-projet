@@ -63,7 +63,7 @@ const Experience: React.FC = () => {
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">Mes expériences professionnelles</h2>
         <div className="w-24 h-1 bg-blue-500 mx-auto mb-10"></div>
         
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="relative pl-8 sm:pl-32 py-6 group">
             <div className="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-gray-300 before:ml-[6.5px] sm:before:ml-[26px] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-4 after:h-4 after:bg-blue-600 after:border-2 after:box-content after:border-gray-50 after:rounded-full after:ml-[1.5px] sm:after:ml-[19px] after:-translate-x-1/2 after:translate-y-1.5">
               <Briefcase className="shrink-0 sm:mr-8 text-blue-500 sm:ml-2" size={32} />

@@ -57,7 +57,7 @@ const Skills: React.FC = () => {
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">Mes compétences</h2>
         <div className="w-24 h-1 bg-blue-500 mx-auto mb-10"></div>
         
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="grid gap-8 grid-cols-1 md:grid-cols-3">
             {skillsData.map((category, index) => (
               <div 
