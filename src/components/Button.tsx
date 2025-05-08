@@ -8,6 +8,8 @@ type ButtonProps = {
   onClick?: () => void;
   type?: 'button' | 'submit' | 'reset';
   icon?: React.ReactNode;
+  href?: string;
+  download?: boolean;
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -18,6 +20,8 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   type = 'button',
   icon,
+  href,
+  download,
 }) => {
   const baseStyles = 'inline-flex items-center justify-center font-medium transition-all duration-300 ease-in-out rounded-md';
   
@@ -33,11 +37,26 @@ const Button: React.FC<ButtonProps> = ({
     lg: 'text-base px-6 py-3',
   };
 
+  const buttonClasses = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`;
+
+  if (href) {
+    return (
+      <a
+        href={href}
+        download={download}
+        className={buttonClasses}
+      >
+        {icon && <span className="mr-2">{icon}</span>}
+        {children}
+      </a>
+    );
+  }
+
   return (
     <button
       type={type}
       onClick={onClick}
-      className={`${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
+      className={buttonClasses}
     >
       {icon && <span className="mr-2">{icon}</span>}
       {children}

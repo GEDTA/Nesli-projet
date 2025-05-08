@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center relative pt-16 pb-16 bg-gradient-to-br from-gray-50 to-blue-50"
+      className="min-h-screen flex items-center relative pt-16 pb-36 md:pb-16 bg-gradient-to-br from-gray-50 to-blue-50"
     >
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -29,6 +29,8 @@ const Hero: React.FC = () => {
                 variant="primary" 
                 size="lg"
                 icon={<Download size={18} />}
+                href="/pdf/CV_NESLIHAN.pdf"
+                download
               >
                 Télécharger mon CV
               </Button>
@@ -49,7 +51,7 @@ const Hero: React.FC = () => {
           <div className="order-1 md:order-2 flex justify-center animate-fadeIn">
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1743507664175-e1a0ebccfcb3?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="/img/Nesli.png"
                 alt="Neslihan GEDIK"
                 className="w-full h-full object-cover"
               />
@@ -58,13 +60,13 @@ const Hero: React.FC = () => {
         </div>
       </div>
       
-      <div className="absolute bottom-8 left-0 right-0 flex justify-center animate-bounce">
+      <div className="absolute bottom-4 left-0 right-0 flex justify-center animate-bounce pointer-events-none select-none">
         <a 
           href="#about"
           className="flex flex-col items-center text-gray-500 hover:text-blue-500 transition-colors duration-300"
           aria-label="Scroll to About section"
         >
-          <span className="text-sm mb-1">En savoir plus</span>
+          <span className="text-sm mb-1 whitespace-nowrap">En savoir plus</span>
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
             width="24" 

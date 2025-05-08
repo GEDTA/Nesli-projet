@@ -1,4 +1,6 @@
 import React from 'react';
+import Button from '../Button';
+import { ExternalLink } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
@@ -32,7 +34,7 @@ const About: React.FC = () => {
             </p>
           </div>
           
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
+          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="bg-gray-50 border border-gray-100 rounded-md p-4 flex items-center">
               <div className="bg-blue-100 rounded-full p-3 mr-4">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-500">
@@ -81,6 +83,46 @@ const About: React.FC = () => {
               <div>
                 <h3 className="font-semibold text-gray-800">Motivée</h3>
                 <p className="text-sm text-gray-600">Je recherche un métier reconnu et impactant</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Section Test de Personnalité */}
+          <div className="mt-20">
+            <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">Mon Test de Personnalité</h2>
+            <div className="w-24 h-1 bg-blue-500 mx-auto mb-10"></div>
+
+            <div className="bg-gray-50 rounded-lg p-8 shadow-sm">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">INFJ - L'Avocat</h3>
+              <blockquote className="border-l-4 border-blue-500 pl-4 mb-6 italic text-gray-600">
+                « Traitez les gens comme s'ils étaient ce qu'ils devraient être, vous les aiderez à devenir ce qu'ils peuvent être. »
+                <footer className="mt-2 text-sm text-gray-500">- Johann Wolfgang Von Goethe</footer>
+              </blockquote>
+
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Les Avocats (INFJ) sont des visionnaires discrets, souvent des idéalistes infatigables qui suscitent l'inspiration. 
+                Idéalistes et dotés de principes, ils ne se contentent pas d'avancer dans la vie – ils veulent se tenir debout et faire la différence. 
+                Pour ces personnalités, le succès ne vient pas de l'argent ou du statut mais de la recherche de l'épanouissement, 
+                de l'aide aux autres et de la volonté de faire le bien dans le monde.
+              </p>
+
+              <p className="text-gray-600 mb-8 leading-relaxed">
+                Bien qu'ils affichent des objectifs et des ambitions élevés, les Avocats ne sont pas des rêveurs oisifs. 
+                Ils se soucient de l'intégrité et sont rarement satisfaits avant d'avoir fait ce qu'ils savent être juste. 
+                Consciencieux jusqu'au bout des ongles, ils avancent dans la vie avec un sens clair de leurs valeurs, 
+                et cherchent à ne jamais perdre de vue ce qui compte vraiment.
+              </p>
+
+              <div className="flex justify-center">
+                <Button
+                  variant="primary"
+                  size="lg"
+                  icon={<ExternalLink size={18} />}
+                  href="https://www.16personalities.com/fr/la-personnalite-infj"
+                  className="mt-4"
+                >
+                  En savoir plus sur le type INFJ
+                </Button>
               </div>
             </div>
           </div>
