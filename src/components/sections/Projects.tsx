@@ -8,7 +8,7 @@ const Projects: React.FC = () => {
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">Mes projets et centres d'intérêt</h2>
         <div className="w-24 h-1 bg-blue-500 mx-auto mb-10"></div>
         
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl 2xl:max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Short term goals */}
             <div className="bg-blue-50 rounded-lg p-6 shadow-sm border border-blue-100 transition-all duration-300 hover:shadow-md">

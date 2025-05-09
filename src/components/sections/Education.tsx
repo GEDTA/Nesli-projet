@@ -55,7 +55,7 @@ const Education: React.FC = () => {
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">Mes diplômes et formation</h2>
         <div className="w-24 h-1 bg-blue-500 mx-auto mb-10"></div>
         
-        <div className="max-w-6xl mx-auto relative">
+        <div className="max-w-4xl 2xl:max-w-6xl mx-auto relative">
           {/* Timeline line */}
           <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-200"></div>
           
